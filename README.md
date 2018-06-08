@@ -113,16 +113,16 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
         android:background="@color/colorRed"
         android:onClick="red"/>
 </LinearLayout>
-### 复制粘贴paste
+###  复制粘贴paste
 
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299461.png)
-### 删除delete
+###   删除delete
 
 	 case R.id.menu_delete:
 			deleteNote();
 			finish();
 			break;
-### 按时间排序（创建时间或者修改时间）
+###   按时间排序（创建时间或者修改时间）
 
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299375.png)
 

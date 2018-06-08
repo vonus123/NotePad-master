@@ -1,7 +1,7 @@
 # NotePad
 This is an AndroidStudio rebuild of google SDK sample NotePad
 ## 时间
-![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299366.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300020.png)
 ### NoteList中显示条目增加时间戳显示
     	Long now = Long.valueOf(System.currentTimeMillis());
         Date date = new Date(System.currentTimeMillis());
@@ -45,7 +45,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
     </ListView>
 
 ## UI美化
-![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300020.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299366.png)
 
  	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

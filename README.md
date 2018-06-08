@@ -7,7 +7,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
         Date date = new Date(System.currentTimeMillis());
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateTime = format.format(date);
-TextView
+<TextView
         android:id="@+id/text1_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@ TextView
         SearchView searchview = (SearchView)findViewById(R.id.search_view);
         searchview.setOnQueryTextListener(NoteSearch.this);  //为查询文本框注册监听器
     }
-<SearchView
+   <SearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

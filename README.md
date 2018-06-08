@@ -18,24 +18,25 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 ## search
 ### 添加笔记查询功能（根据标题查询）
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300099.png)
- protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.note_search_list);
-        Intent intent = getIntent();
-        if (intent.getData() == null) {
-            intent.setData(NotePad.Notes.CONTENT_URI);
-        }
-        SearchView searchview = (SearchView)findViewById(R.id.search_view);
-        searchview.setOnQueryTextListener(NoteSearch.this);  //为查询文本框注册监听器
-    }
-   <SearchView
-        android:id="@+id/search_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:iconifiedByDefault="false"
-        android:queryHint="输入搜索内容..."
-        android:layout_alignParentTop="true">
-    </SearchView>
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.note_search_list);
+		Intent intent = getIntent();
+		if (intent.getData() == null) {
+		    intent.setData(NotePad.Notes.CONTENT_URI);
+		}
+		SearchView searchview = (SearchView)findViewById(R.id.search_view);
+		searchview.setOnQueryTextListener(NoteSearch.this);  //为查询文本框注册监听器
+	    }
+	   <SearchView
+		android:id="@+id/search_view"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:iconifiedByDefault="false"
+		android:queryHint="输入搜索内容..."
+		android:layout_alignParentTop="true">
+	    </SearchView>
 
     <ListView
         android:id="@android:id/list"
@@ -45,7 +46,8 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 
 ## UI美化
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300020.png)
-  public void onCreate(Bundle savedInstanceState) {
+
+ 	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.note_color);
         mUri = getIntent().getData();
@@ -69,16 +71,16 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
             NotePad.Notes.COLUMN_NAME_TITLE, // 1
             NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, // 2
             NotePad.Notes.COLUMN_NAME_BACK_COLOR,
-}; 
-case R.id.menu_bcolor:
+	}; 
+	case R.id.menu_bcolor:
                 changeColor();
                 break;
 ### 使用线性布局
-* <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="28dp">
+	 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingLeft="28dp">
 
     <ImageButton
         android:id="@+id/color_white"
@@ -112,12 +114,12 @@ case R.id.menu_bcolor:
         android:onClick="red"/>
 </LinearLayout>
 ### 复制粘贴paste
-![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299461.png)
+	![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299461.png)
 ### 删除delete
- case R.id.menu_delete:
-                deleteNote();
-                finish();
-                break;
+	 case R.id.menu_delete:
+			deleteNote();
+			finish();
+			break;
 ### 按时间排序（创建时间或者修改时间）
-![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299375.png)
+	![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299375.png)
 

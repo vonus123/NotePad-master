@@ -1,7 +1,7 @@
 # NotePad
 This is an AndroidStudio rebuild of google SDK sample NotePad
 时间
-[!image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299366.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299366.png)
 NoteList中显示条目增加时间戳显示
         Long now = Long.valueOf(System.currentTimeMillis());
         Date date = new Date(System.currentTimeMillis());
@@ -17,7 +17,7 @@ TextView
 
 search
 添加笔记查询功能（根据标题查询）
-[!image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300099.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300099.png)
  protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.note_search_list);
@@ -44,7 +44,7 @@ search
     </ListView>
 
 UI美化
-[!image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300020.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300020.png)
   public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.note_color);
@@ -112,12 +112,12 @@ case R.id.menu_bcolor:
         android:onClick="red"/>
 </LinearLayout>
 复制粘贴paste
-[!image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299461.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299461.png)
 删除delete
  case R.id.menu_delete:
                 deleteNote();
                 finish();
                 break;
 按时间排序（创建时间或者修改时间）
-[!image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299375.png)
+![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299375.png)
 

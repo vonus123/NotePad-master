@@ -1,9 +1,9 @@
 # NotePad
 This is an AndroidStudio rebuild of google SDK sample NotePad
-##时间
+## 时间
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299366.png)
-###NoteList中显示条目增加时间戳显示
-···     	Long now = Long.valueOf(System.currentTimeMillis());
+### NoteList中显示条目增加时间戳显示
+    	Long now = Long.valueOf(System.currentTimeMillis());
         Date date = new Date(System.currentTimeMillis());
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String dateTime = format.format(date);
@@ -15,8 +15,8 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 		android:paddingLeft="5dip"
 		android:textColor="#01010e"/>
 	
-##search
-###添加笔记查询功能（根据标题查询）
+## search
+### 添加笔记查询功能（根据标题查询）
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300099.png)
  protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +43,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
         android:layout_height="wrap_content">
     </ListView>
 
-##UI美化
+## UI美化
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528300020.png)
   public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +58,7 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
         );
 
     }
- ###跳转改变颜色的activity，将uri信息传到新的activity
+ ### 跳转改变颜色的activity，将uri信息传到新的activity
     private final void changeColor() {
         Intent intent = new Intent(null,mUri);
         intent.setClass(NoteEditor.this,NoteColor.class);
@@ -73,8 +73,8 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 case R.id.menu_bcolor:
                 changeColor();
                 break;
-###使用线性布局
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+### 使用线性布局
+* <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -111,13 +111,13 @@ case R.id.menu_bcolor:
         android:background="@color/colorRed"
         android:onClick="red"/>
 </LinearLayout>
-###复制粘贴paste
+### 复制粘贴paste
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299461.png)
-###删除delete
+### 删除delete
  case R.id.menu_delete:
                 deleteNote();
                 finish();
                 break;
-###按时间排序（创建时间或者修改时间）
+### 按时间排序（创建时间或者修改时间）
 ![image](https://github.com/vonus123/NotePad-master/blob/master/Screenshot_1528299375.png)
 
